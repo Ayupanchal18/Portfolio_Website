@@ -6,7 +6,13 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" style="border-radius: 25px;" href="img/favlogo.png" type="image/png">
-	<title>Aayush Portfolio</title>
+	<meta name="description"
+		content="Aayush Panchal — Full-Stack Web Developer (MERN). I build scalable web apps using React, Node & MongoDB.">
+	<meta property="og:title" content="Aayush Panchal — Full-Stack Web Developer">
+	<meta property="og:description" content="I build scalable web apps using React, Node & MongoDB.">
+	<meta property="og:image" content="/img/og-image.webp">
+	<meta name="twitter:card" content="summary_large_image">
+
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -26,8 +32,9 @@
 			<nav class="navbar navbar-expand-lg navbar-light">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
-					<a class="navbar-brand logo_h" href="index.html"><img style="height: 50px; border-radius: 25px;"
-							src="logoInvert.png" alt=""></a>
+					<a class="navbar-brand logo_h" href="index.html">
+						<img style="height: 40px; border-radius: 25px;" src="logoInvert.png" loading="lazy" alt="">
+					</a>
 					<button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +48,7 @@
 							<li class="nav-item active"><a class="nav-link" href="index.html">HOME</a></li>
 							<li class="nav-item"><a class="nav-link" href="#About_Us_Section">ABOUT</a></li>
 							<li class="nav-item"><a class="nav-link" href="#portfolio">PROJECTS</a></li>
-							<li class="nav-item"><a class="nav-link" href="#Service_Section">SERVICES</a></li>
+							<!-- <li class="nav-item"><a class="nav-link" href="#Service_Section">SERVICES</a></li> -->
 							<li class="nav-item"><a class="nav-link" href="#Contact_Us">CONTACT</a></li>
 							<div>
 								<input type="checkbox" class="checkbox" id="checkbox">
@@ -59,32 +66,48 @@
 	</header>
 	<!--================ End Header Area =================-->
 
-	<!--================ Start Home Banner Area =================-->
-	<section class="home_banner_area">
+	<!-- Hero Section -->
+	<section class="home_banner_area py-5  ">
 		<div class="banner_inner">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-7">
+				<div class="row align-items-center">
+
+					<!-- Left Content -->
+					<div class="col-lg-7 text-center text-lg-start">
 						<div class="banner_content">
-							<h3 class="text-uppercase">Hello</h3>
-							<h1 class="text-uppercase">I am Aayush </h1>
-							<h5 class="text-uppercase">Full Stack Web Developer</h5>
-							<div class="d-flex align-items-center">
-								<a class="primary_btn" href="#Contact_Us"><span>Hire Me</span></a>
-								<a class="primary_btn tr-bg " href="./img/Aayush_CV.pdf"
-									download="Aayush_CV.pdf"><span>Get CV</span></a>
+							<h3 class="text-uppercase fw-semibold mb-2">👋 Hello, I’m</h3>
+							<h1 class="text-uppercase display-4 fw-bold mb-3">Aayush Panchal</h1>
+
+							<!-- Typewriter effect -->
+							<h5 class="text-uppercase fw-semibold role mb-4">
+								<span class="typewriter">Full Stack Web Developer</span>
+							</h5>
+
+							<p class="lead mb-4">
+								I build scalable web apps with React, Node.js & MongoDB that improve
+								user experience and drive business growth.
+							</p>
+
+							<div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+								<a class="btn btn-primary px-4 py-2 shadow" href="#portfolio">🚀 View My Work</a>
+								<a class="btn btn-outline-primary px-4 py-2 shadow" href="./img/Aayush_CV.pdf"
+									download="Aayush_CV.pdf">📄 Get CV</a>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-5">
-						<div class="home_right_img">
-							<img class="" height="500px" src="img/Pfp2 - Copy.png" alt="">
-						</div>
+
+					<!-- Right Image -->
+					<div class="col-lg-5 text-center mt-4 mt-lg-0">
+						<img src="img/Pfp2 - Copy.png" loading="lazy" alt="Aayush Panchal"
+							class="img-fluid rounded-circle shadow-lg animate-float" style="max-height: 400px;">
 					</div>
+
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 	<!--================ End Home Banner Area =================-->
 
 	<!--================ Start About Us Area =================-->
@@ -93,23 +116,22 @@
 			<div class="row d-flex justify-content-start align-items-center">
 				<div class="col-lg-5">
 					<div class="about_img">
-						<img class="" src="img/about-us.png" alt="">
+						<img class="" src="img/about-us.png" loading="lazy" alt="">
 					</div>
 				</div>
 
 				<div class="offset-lg-1 col-lg-5">
 					<div class="main_title text-left">
 						<h2>let’s <br>
-							<span style="color: orangered;">Introduce</span> about <br>
+							<span class="gradient-color">Introduce</span> about <br>
 							myself
 						</h2>
 						<p>
-							I am a <span style="color: orangered;">Full-Stack Developer</span> with expertise in
-							HTML, CSS, JavaScript, Node JS, React JS,
-							MongoDB, Express JS, Git, GitHub. I have experience developing a fullstack
-							e-commerce shoe website with responsive
-							UI, interactive features, and secure server-side
-							operations.
+							Hey, I’m Aayush 👨‍💻, a passionate <span style="color: orangered;">Full-Stack
+								Developer</span> specializing in building scalable MERN
+							stack applications. I enjoy turning complex problems into simple, user-friendly digital
+							experiences. When I’m not coding, you’ll find me exploring tech trends, contributing to open
+							source, or planning my next side project.
 						</p>
 						<p>My <span style="color: orangered;">goal</span> is to contribute my skills to creating
 							innovative and user-friendly web applications.
@@ -137,63 +159,63 @@
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/RJS.png" alt="">
+									<img src="img/technologies/RJS.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/js.png" alt="">
+									<img src="img/technologies/js.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/node.png" alt="">
+									<img src="img/technologies/node.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/ejs.webp" alt="">
+									<img src="img/technologies/ejs.webp" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/html.png" alt="">
+									<img src="img/technologies/html.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/mdb.png" alt="">
+									<img src="img/technologies/mdb.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/bs.png" alt="">
+									<img src="img/technologies/bs.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/css.png" alt="">
+									<img src="img/technologies/css.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-4 col-md-4 col-sm-6">
 							<div class="single-brand-item d-table">
 								<div class="d-table-cell text-center">
-									<img src="img/technologies/tcss.png" alt="">
+									<img src="img/technologies/tcss.png" loading="lazy" alt="">
 								</div>
 							</div>
 						</div>
@@ -225,7 +247,8 @@
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/Strideworld/Pro1 (2).png" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/Strideworld/Pro1 (2).png" loading="lazy"
+									alt="">
 								<div class="overlay"></div>
 								<a href="img/portfolio/Strideworld/Pro1 (2).png" class="img-gal">
 									<div class="icon">
@@ -253,7 +276,7 @@
 								<p>Full Stack E-commerce app</p>
 								<div class="codeButtonDiv">
 									<button>
-										<a href="">
+										<a href="https://stride-world.vercel.app" target="_blank">
 											Demo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -262,7 +285,7 @@
 										</a>
 									</button>
 									<button>
-										<a href="">
+										<a href="https://github.com/Ayupanchal18/StrideWorld-Website" target="_blank">
 											Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -279,7 +302,7 @@
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100"
-									src="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" alt="">
+									src="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" loading="lazy" alt="">
 								<div class="overlay"></div>
 								<a href="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" class="img-gal">
 									<div class="icon">
@@ -307,7 +330,7 @@
 								<p> Attractive Landing Page</p>
 								<div class="codeButtonDiv">
 									<button>
-										<a href="">
+										<a href="https://debotics-india.vercel.app" target="_blank">
 											Demo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -316,7 +339,7 @@
 										</a>
 									</button>
 									<button>
-										<a href="">
+										<a href="https://github.com/Ayupanchal18/Debotics-india" target="_blank">
 											Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -331,7 +354,7 @@
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/HelloFresh/2.png" alt="">
+								<img class="img-fluid w-100" src="img/portfolio/HelloFresh/2.png" loading="lazy" alt="">
 								<div class="overlay"></div>
 								<a href="img/portfolio/HelloFresh/2.1.png" class="img-gal">
 									<div class="icon">
@@ -359,7 +382,7 @@
 								<p>Modern Design</p>
 								<div class="codeButtonDiv">
 									<button>
-										<a href="">
+										<a href="https://hello-fresh-gold.vercel.app/" target="_blank">
 											Demo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -368,7 +391,7 @@
 										</a>
 									</button>
 									<button>
-										<a href="">
+										<a href="https://github.com/Ayupanchal18/Hello-Fresh" target="_blank">
 											Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -384,7 +407,7 @@
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100"
-									src="img/portfolio/Youtube/Screenshot 2025-09-17 193113.png" alt="">
+									src="img/portfolio/Youtube/Screenshot 2025-09-17 193113.png" loading="lazy" alt="">
 								<div class="overlay"></div>
 								<a href="img/portfolio/Youtube/Screenshot 2025-09-17 193100.png" class="img-gal">
 									<div class="icon">
@@ -412,7 +435,8 @@
 								<p>Youtube Clone</p>
 								<div class="codeButtonDiv">
 									<button>
-										<a href="">
+										<a href="https://drive.google.com/file/d/1o9VNZ0XIKpS2SD1p07jmfvuIXsMJf7B_/view?usp=drive_link"
+											target="_blank">
 											Demo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -421,7 +445,7 @@
 										</a>
 									</button>
 									<button>
-										<a href="">
+										<a href="https://github.com/Ayupanchal18/Youtube_Clone">
 											Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
 												viewBox="0 0 24 24">
 												<path
@@ -437,16 +461,142 @@
 	</section>
 	<!--================End Portfolio Area =================-->
 
+	<!-- ==================== Certificate section==================== -->
+
+	<section class="cert-section">
+		<h2>Certificates</h2>
+		<hr>
+		<div class="cert-grid">
+			<!-- Card 1 -->
+			<div class="cert-card">
+				<img src="./img/certificates/FSD.jpg" loading="lazy" alt="Certificate 1">
+				<div class="overlay">
+					<a href="#cert1">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">Full Stack Development</h5>
+			</div>
+
+			<!-- Card 2 -->
+			<div class="cert-card">
+				<img src="./img/certificates/HtmlandCss.jpg" loading="lazy" alt="Certificate 2">
+				<div class="overlay">
+					<a href="#cert2">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">HTML & CSS</h5>
+			</div>
+
+			<!-- Card 3 -->
+			<div class="cert-card">
+				<img src="./img/certificates/Javascript.jpg" loading="lazy" alt="Certificate 3">
+				<div class="overlay">
+					<a href="#cert3">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">Javascript</h5>
+			</div>
+			<!-- Card 4 -->
+			<div class="cert-card">
+				<img src="./img/certificates/NodeExpressandMongo.jpg" loading="lazy" alt="Certificate 4">
+				<div class="overlay">
+					<a href="#cert4">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">Node JS, Express JS and Mongo DB</h5>
+			</div>
+			<!-- Card 5 -->
+			<div class="cert-card">
+				<img src="./img/certificates/GitandGitHub.jpg" loading="lazy" alt="Certificate 5">
+				<div class="overlay">
+					<a href="#cert5">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">Git and Github</h5>
+			</div>
+			<!-- Card 6 -->
+			<div class="cert-card">
+				<img src="./img/certificates/NSDC.jpg" loading="lazy" alt="Certificate 6">
+				<div class="overlay">
+					<a href="#cert6">View Certificate
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" class="ml-1">
+							<path fill="#000000"
+								d="M4 20H3v1h1zm5.707-4.293a1 1 0 0 0-1.414-1.414zM3 14v6h2v-6zm1 7h6v-2H4zm.707-.293l5-5l-1.414-1.414l-5 5zM20 4h1V3h-1zm-5.707 4.293a1 1 0 0 0 1.414 1.414zM21 10V4h-2v6zm-1-7h-6v2h6zm-.707.293l-5 5l1.414 1.414l5-5z" />
+						</svg>
+					</a>
+				</div>
+				<h5 class="title_cert">NSDC Full Stack development</h5>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modal 1 -->
+	<div id="cert1" class="modal">
+		<a href="" class="close-btn">&times;</a>
+		<img src="./img/certificates//FSD.jpg" loading="lazy" alt="Certificate 1 Full">
+	</div>
+
+	<!-- Modal 2 -->
+	<div id="cert2" class="modal">
+		<a href="#" class="close-btn">&times;</a>
+		<img src="./img/certificates/HtmlandCss.jpg" loading="lazy" alt="Certificate 2 Full">
+	</div>
+
+	<!-- Modal 3 -->
+	<div id="cert3" class="modal">
+		<a href="#" class="close-btn">&times;</a>
+		<img src="./img/certificates/Javascript.jpg" loading="lazy" alt="Certificate 3 Full">
+	</div>
+	<!-- Modal 4 -->
+	<div id="cert4" class="modal">
+		<a href="#" class="close-btn">&times;</a>
+		<img src="./img/certificates/NodeExpressandMongo.jpg" loading="lazy" alt="Certificate 4 Full">
+	</div>
+	<!-- Modal 5 -->
+	<div id="cert5" class="modal">
+		<a href="#" class="close-btn">&times;</a>
+		<img src="./img/certificates/GitandGitHub.jpg" loading="lazy" alt="Certificate 5 Full">
+	</div>
+	<!-- Modal 6 -->
+	<div id="cert6" class="modal">
+		<a href="#" class="close-btn">&times;</a>
+		<img src="./img/certificates/NSDC.jpg" loading="lazy" alt="Certificate 6 Full">
+	</div>
+
+
+	<!-- ==================== Certificate section==================== -->
 
 	<!--================Contact Area =================-->
 	<section class="contact_area section_gap" id="Contact_Us">
+		<h2 class="text-center mb-4">Reach Out</h2>
 		<div class="container">
+			<hr>
 			<div class="row">
 				<div class="col-lg-3">
 					<div class="contact_info">
 						<div class="info_item">
 							<i class="lnr lnr-phone-handset" style="color: black;"></i>
-							<h6><a href="#">+91 9982303571</a></h6>
+							<h6>+91 9982303571</h6>
 						</div>
 						<br>
 						<div class="info_item">
@@ -503,7 +653,8 @@
 					<div class="footer_top flex-column">
 						<div class="footer_logo">
 							<a href="#">
-								<img style="height: 80px; border-radius: 25px;" src="logoInvert.png" alt="">
+								<img style="height: 80px; border-radius: 25px;" src="logoInvert.png" loading="lazy"
+									alt="">
 							</a>
 							<h4>Follow Me</h4>
 						</div>
