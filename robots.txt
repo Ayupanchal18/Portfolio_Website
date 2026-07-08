@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayupanchal18.github.io/Portfolio_Website/sitemap.xml

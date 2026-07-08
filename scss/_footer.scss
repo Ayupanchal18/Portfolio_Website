@@ -65,3 +65,29 @@
 
 /* End Footer Area css
 ============================================================================================ */
+
+/*===========================================================
+  Utility classes — replacing inline styles from HTML
+===========================================================*/
+
+/* Navbar logo */
+.nav-logo {
+	height: 40px;
+	border-radius: 25px;
+}
+
+/* Footer logo */
+.footer-logo {
+	height: 80px;
+	border-radius: 25px;
+}
+
+/* Hero profile picture */
+.hero-pfp {
+	max-height: 400px;
+}
+
+/* Contact section icons — use gradient color from predefine */
+.contact-icon {
+	@extend .gradient-color;
+}
