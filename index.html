@@ -9,7 +9,8 @@
 	<link rel="icon" href="img/favlogo.png" type="image/png">
 
 	<!-- SEO Meta -->
-	<meta name="description" content="Aayush Panchal — Full-Stack Web Developer (MERN). I build scalable web apps using React, Node.js & MongoDB.">
+	<meta name="description"
+		content="Aayush Panchal — Full-Stack Web Developer (MERN). I build scalable web apps using React, Node.js & MongoDB.">
 	<meta name="author" content="Aayush Panchal">
 
 	<!-- Open Graph / Social -->
@@ -26,7 +27,8 @@
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@500;700&display=swap"
+		rel="stylesheet">
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
@@ -37,6 +39,114 @@
 	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
 	<!-- main css -->
 	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Spacing overrides to resolve layout caching and compiler issues -->
+	<style>
+		.portfolio_box .short_info {
+			padding-left: 15px !important;
+			padding-right: 15px !important;
+			padding-bottom: 25px !important;
+		}
+
+		.portfolio_box .short_info h4 {
+			margin-bottom: 8px !important;
+		}
+
+		.portfolio_box .short_info p {
+			margin-bottom: 0px !important;
+		}
+
+		.codeButtonDiv {
+			margin-top: 20px !important;
+		}
+
+		.single-brand-item {
+			width: 100% !important;
+			max-width: 220px !important;
+			height: 120px !important;
+			cursor: pointer;
+			margin: 0 auto 30px !important;
+			border: 1px solid #eeeeee !important;
+			border-radius: 12px !important;
+			display: flex !important;
+			flex-direction: column !important;
+			align-items: center !important;
+			justify-content: center !important;
+			gap: 8px !important;
+			background: #ffffff !important;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02) !important;
+			transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease !important;
+		}
+
+		.single-brand-item img,
+		.single-brand-item svg {
+			max-height: 48px !important;
+			max-width: 48px !important;
+			width: auto !important;
+			height: auto !important;
+			object-fit: contain !important;
+		}
+
+		.single-brand-item span {
+			font-size: 13px !important;
+			font-weight: 500 !important;
+			color: #444444 !important;
+			font-family: "Rubik", sans-serif !important;
+		}
+
+		.single-brand-item:hover {
+			transform: translateY(-4px) !important;
+			border-color: #854fee !important;
+			box-shadow: 0 10px 25px rgba(133, 79, 238, 0.12) !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(10) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 0.77s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(11) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 0.85s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(12) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 0.93s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(13) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 1.01s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(14) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 1.09s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(15) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 1.17s !important;
+		}
+
+		.reveal-stagger.visible>*:nth-child(16) {
+			opacity: 1 !important;
+			transform: none !important;
+			transition-delay: 1.25s !important;
+		}
+
+		.reveal-stagger.visible>* {
+			opacity: 1 !important;
+			transform: none !important;
+		}
+	</style>
 
 	<!-- EmailJS SDK -->
 	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
@@ -68,14 +178,6 @@
 							<li class="nav-item"><a class="nav-link" href="#portfolio">PROJECTS</a></li>
 							<!-- <li class="nav-item"><a class="nav-link" href="#Service_Section">SERVICES</a></li> -->
 							<li class="nav-item"><a class="nav-link" href="#Contact_Us">CONTACT</a></li>
-							<div>
-								<input type="checkbox" class="checkbox" id="checkbox">
-								<label for="checkbox" class="checkbox-label">
-									<i class="fas fa-moon"></i>
-									<i class="fas fa-sun"></i>
-									<span class="ball"></span>
-								</label>
-							</div>
 						</ul>
 					</div>
 				</div>
@@ -108,15 +210,16 @@
 
 							<div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
 								<a class="btn btn-primary px-4 py-2 shadow" href="#portfolio">🚀 View My Work</a>
-								<a class="btn btn-outline-primary px-4 py-2 shadow" href="./img/Aayush_CV.pdf"
-									download="Aayush_CV.pdf">📄 Get CV</a>
+								<a class="btn btn-outline-primary px-4 py-2 shadow"
+									href="./img/aayush-panchal-resume.pdf" download="aayush-panchal-resume.pdf">📄 Get
+									CV</a>
 							</div>
 						</div>
 					</div>
 
 					<!-- Right Image -->
 					<div class="col-lg-5 text-center mt-4 mt-lg-0">
-						<img src="img/Pfp2.png" loading="lazy" alt="Aayush Panchal — Full-Stack Developer"
+						<img src="img/profilepfp.jpeg" loading="lazy" alt="Aayush Panchal — Full-Stack Developer"
 							class="img-fluid rounded-circle shadow-lg animate-float hero-pfp">
 					</div>
 
@@ -126,7 +229,9 @@
 	</section>
 
 	<!-- Scroll-down indicator -->
-	<div class="scroll-indicator" onclick="document.getElementById('About_Us_Section').scrollIntoView({behavior:'smooth'})" aria-label="Scroll down">
+	<div class="scroll-indicator"
+		onclick="document.getElementById('About_Us_Section').scrollIntoView({behavior:'smooth'})"
+		aria-label="Scroll down">
 		<span></span>
 	</div>
 
@@ -144,22 +249,20 @@
 
 				<div class="offset-lg-1 col-lg-5">
 					<div class="main_title text-left">
-						<h2>let’s <br>
-							<span class="gradient-color">Introduce</span> about <br>
+						<h2>Let me <br>
+							<span class="gradient-color">introduce</span> <br>
 							myself
 						</h2>
 						<p>
-							Hey, I’m Aayush 👨‍💻, a passionate <span style="color: orangered;">Full-Stack
+							Hey, I’m Aayush 👨‍💻, a passionate <span class="text-highlight">Full-Stack
 								Developer</span> specializing in building scalable MERN
 							stack applications. I enjoy turning complex problems into simple, user-friendly digital
 							experiences. When I’m not coding, you’ll find me exploring tech trends, contributing to open
 							source, or planning my next side project.
 						</p>
-						<p>My <span style="color: orangered;">goal</span> is to contribute my skills to creating
+						<p>My <span class="text-highlight">goal</span> is to contribute my skills to creating
 							innovative and user-friendly web applications.
 						</p>
-						<hr>
-						<br>
 					</div>
 				</div>
 
@@ -172,73 +275,144 @@
 	<section class="brand_area section_gap_bottom reveal">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-lg-6">
-					<div class="container text-center ">
+				<div class="col-lg-9">
+					<div class="container text-center">
 						<h2>Technologies, I Know</h2>
 					</div>
 					<br>
-					<div class="row reveal-stagger">
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/RJS.png" loading="lazy" alt="">
-								</div>
+					<div class="row reveal-stagger justify-content-center">
+						<!-- React.js -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/React.png" loading="lazy" alt="React.js">
+								<span>React.js</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/js.png" loading="lazy" alt="">
-								</div>
+						<!-- JavaScript -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/js.png" loading="lazy" alt="JavaScript">
+								<span>JavaScript</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/node.png" loading="lazy" alt="">
-								</div>
+						<!-- Node.js -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/node.png" loading="lazy" alt="Node.js">
+								<span>Node.js</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/ejs.webp" loading="lazy" alt="">
-								</div>
+						<!-- Express.js -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/ejs.webp" loading="lazy" alt="Express.js">
+								<span>Express.js</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/html.png" loading="lazy" alt="">
-								</div>
+						<!-- MongoDB -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/mdb.png" loading="lazy" alt="MongoDB">
+								<span>MongoDB</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/mdb.png" loading="lazy" alt="">
-								</div>
+						<!-- MySQL -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#00758F"
+										d="M12 2C6.48 2 2 4 2 6.5s4.48 4.5 10 4.5 10-2 10-4.5S17.52 2 12 2zm0 18c-5.52 0-10-2-10-4.5v-3.5c0 2.5 4.48 4.5 10 4.5s10-2 10-4.5v3.5c0 2.5-4.48 4.5-10 4.5zm0-6c-5.52 0-10-2-10-4.5V9.5c0 2.5 4.48 4.5 10 4.5s10-2 10-4.5V9.5c0 2.5-4.48 4.5-10 4.5z" />
+								</svg>
+								<span>MySQL</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/bs.png" loading="lazy" alt="">
-								</div>
+						<!-- HTML5 -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/html.png" loading="lazy" alt="HTML5">
+								<span>HTML5</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/css.png" loading="lazy" alt="">
-								</div>
+						<!-- CSS3 -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/css.png" loading="lazy" alt="CSS3">
+								<span>CSS3</span>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6">
-							<div class="single-brand-item d-table">
-								<div class="d-table-cell text-center">
-									<img src="img/technologies/tcss.png" loading="lazy" alt="">
-								</div>
+						<!-- Tailwind CSS -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/tcss.png" loading="lazy" alt="Tailwind CSS">
+								<span>Tailwind CSS</span>
+							</div>
+						</div>
+						<!-- Bootstrap -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<img src="img/technologies/bs.png" loading="lazy" alt="Bootstrap">
+								<span>Bootstrap</span>
+							</div>
+						</div>
+						<!-- Git & GitHub -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#24292e"
+										d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+								</svg>
+								<span>Git & GitHub</span>
+							</div>
+						</div>
+						<!-- REST APIs & JWT -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#00b4d8"
+										d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 6c1.66 0 3 1.34 3 3 0 1.09-.58 2.04-1.45 2.58l.45 1.42H10l.45-1.42C9.58 12.04 9 11.09 9 10c0-1.66 1.34-3 3-3z" />
+								</svg>
+								<span>REST APIs & JWT</span>
+							</div>
+						</div>
+						<!-- Postman -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<circle cx="12" cy="12" r="10" fill="#FF6C37" />
+									<path fill="#ffffff"
+										d="M12 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm1 11h-2v-5h2v5z" />
+								</svg>
+								<span>Postman</span>
+							</div>
+						</div>
+						<!-- API Integration -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#4EA94B"
+										d="M17 7h-4v2h4c1.65 0 3 1.35 3 3s-1.35 3-3 3h-4v2h4c2.76 0 5-2.24 5-5s-2.24-5-5-5zm-6 8H7c-1.65 0-3-1.35-3-3s1.35-3 3-3h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-2zm-3-4h8v2H8v-2z" />
+								</svg>
+								<span>API Integration</span>
+							</div>
+						</div>
+						<!-- Responsive Design -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#854fee"
+										d="M4 6h18V4H4c-1.1 0-2 .9-2 2v11H0v3h14v-3H4V6zm19 2h-6c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h6c.55 0 1-.45 1-1V9c0-.55-.45-1-1-1zm-1 10h-4v-7h4v7z" />
+								</svg>
+								<span>Responsive Design</span>
+							</div>
+						</div>
+						<!-- JWT / Payment -->
+						<div class="col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
+							<div class="single-brand-item">
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48">
+									<path fill="#ffb703"
+										d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+								</svg>
+								<span>JWT / Payment</span>
 							</div>
 						</div>
 					</div>
@@ -247,6 +421,80 @@
 		</div>
 	</section>
 	<!--================ End Brand Area =================-->
+
+	<!--================ Start Experience & Education Area =================-->
+	<section class="experience_education_area section_gap reveal" id="experience_education">
+		<div class="container">
+			<div class="row">
+				<!-- Experience Column -->
+				<div class="col-lg-6 mb-4 mb-lg-0">
+					<div class="main_title text-left mb-40">
+						<h2>Work <br>
+							<span class="gradient-color">Experience</span>
+						</h2>
+					</div>
+					<div class="timeline">
+						<!-- Job 1 -->
+						<div class="timeline_item">
+							<div class="timeline_icon"><i class="fa fa-briefcase"></i></div>
+							<div class="timeline_content">
+								<span class="timeline_date">Oct 2025 - Jul 2026</span>
+								<h4>Jr. MERN Developer</h4>
+								<h5>Strivedge Technolabs <span class="location"><i class="fa fa-map-marker"></i>
+										Ahmedabad, Gujarat</span></h5>
+								<ul>
+									<li>Developed production SaaS features using React.js, Node.js, Express.js, MySQL,
+										Redux Toolkit, and REST APIs.</li>
+									<li>Implemented secure authentication, Stripe-powered subscriptions, and backend
+										APIs with business logic and validations.</li>
+									<li>Enhanced job workflows, search, admin dashboards, notifications, analytics, and
+										user-facing features.</li>
+									<li>Fixed production issues and contributed to Agile feature releases.</li>
+								</ul>
+							</div>
+						</div>
+						<!-- Job 2 -->
+						<div class="timeline_item">
+							<div class="timeline_icon"><i class="fa fa-briefcase"></i></div>
+							<div class="timeline_content">
+								<span class="timeline_date">Sep 2024 - Jul 2025</span>
+								<h4>Associate</h4>
+								<h5>Fusion Business Solutions <span class="location"><i class="fa fa-map-marker"></i>
+										Udaipur, Rajasthan</span></h5>
+								<ul>
+									<li>Contributed to data-focused project for Canada-based client, ensuring accurate
+										and timely data processing.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Education Column -->
+				<div class="col-lg-6">
+					<div class="main_title text-left mb-40">
+						<h2>My <br>
+							<span class="gradient-color">Education</span>
+						</h2>
+					</div>
+					<div class="timeline">
+						<!-- Edu 1 -->
+						<div class="timeline_item">
+							<div class="timeline_icon"><i class="fa fa-graduation-cap"></i></div>
+							<div class="timeline_content">
+								<span class="timeline_date">2019 - 2022</span>
+								<h4>Bachelor of Science</h4>
+								<h5>University College of Science <span class="location"><i
+											class="fa fa-map-marker"></i> Udaipur, Rajasthan</span></h5>
+								<p class="edu_details">Graduated with 71% score specializing in Science studies.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================ End Experience & Education Area =================-->
 
 	<!--================Start Portfolio Area =================-->
 	<section class="portfolio_area reveal" id="portfolio">
@@ -266,6 +514,72 @@
 
 			<div class="filters-content">
 				<div class="row portfolio-grid reveal-stagger justify-content-center">
+					<!-- Renters Project Card -->
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/portfolio/Renters/renters_1.png" loading="lazy"
+									alt="Renters Property Rental Platform Screenshot">
+								<div class="overlay"></div>
+								<a href="img/portfolio/Renters/renters_1.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+								<a href="img/portfolio/Renters/renters_2.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+								<a href="img/portfolio/Renters/renters_3.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+								<a href="img/portfolio/Renters/renters_4.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+								<a href="img/portfolio/Renters/renters_5.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+								<a href="img/portfolio/Renters/renters_6.png" class="img-gal">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a href="https://renters-l7dz.onrender.com" target="_blank"
+										rel="noopener">Renters</a></h4>
+								<p>Property Rental Platform (MERN)</p>
+								<div class="codeButtonDiv">
+									<button>
+										<a href="https://renters-l7dz.onrender.com" target="_blank">
+											Demo <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+												viewBox="0 0 24 24">
+												<path
+													d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3 17v-10l9 5.146-9 4.854z" />
+											</svg>
+										</a>
+									</button>
+									<button>
+										<a href="https://github.com/Ayupanchal18/Renters" target="_blank">
+											Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+												viewBox="0 0 24 24">
+												<path
+													d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 6c-3.313 0-6 2.686-6 6 0 2.651 1.719 4.9 4.104 5.693.3.056.396-.13.396-.289v-1.117c-1.669.363-2.017-.707-2.017-.707-.272-.693-.666-.878-.666-.878-.544-.373.041-.365.041-.365.603.042.92.619.92.619.535.917 1.403.652 1.746.499.054-.388.209-.652.381-.802-1.333-.152-2.733-.667-2.733-2.965 0-.655.234-1.19.618-1.61-.062-.153-.268-.764.058-1.59 0 0 .504-.161 1.65.615.479-.133.992-.199 1.502-.202.51.002 1.023.069 1.503.202 1.146-.776 1.648-.615 1.648-.615.327.826.121 1.437.06 1.588.385.42.617.955.617 1.61 0 2.305-1.404 2.812-2.74 2.96.216.186.412.551.412 1.111v1.646c0 .16.096.347.4.288 2.383-.793 4.1-3.041 4.1-5.691 0-3.314-2.687-6-6-6z" />
+											</svg>
+										</a>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
@@ -294,8 +608,9 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="https://strideworld-frontend.onrender.com" target="_blank" rel="noopener">StrideWorld</a></h4>
-								<p>Full Stack E-commerce app</p>
+								<h4><a href="https://strideworld-frontend.onrender.com" target="_blank"
+										rel="noopener">StrideWorld</a></h4>
+								<p>Full Stack E-commerce App</p>
 								<div class="codeButtonDiv">
 									<button>
 										<a href="https://strideworld-frontend.onrender.com" target="_blank">
@@ -324,7 +639,8 @@
 						<div class="portfolio_box">
 							<div class="single_portfolio">
 								<img class="img-fluid w-100"
-									src="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" loading="lazy" alt="Debotics India Landing Page Screenshot">
+									src="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" loading="lazy"
+									alt="Debotics India Landing Page Screenshot">
 								<div class="overlay"></div>
 								<a href="img/portfolio/Debotics/Screenshot 2025-09-17 171918.png" class="img-gal">
 									<div class="icon">
@@ -348,7 +664,8 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="https://debotics-india.vercel.app" target="_blank" rel="noopener">Debotics India</a></h4>
+								<h4><a href="https://debotics-india.vercel.app" target="_blank" rel="noopener">Debotics
+										India</a></h4>
 								<p> Attractive Landing Page</p>
 								<div class="codeButtonDiv">
 									<button>
@@ -376,7 +693,8 @@
 					<div class="col-lg-4 col-md-6 all latest">
 						<div class="portfolio_box">
 							<div class="single_portfolio">
-								<img class="img-fluid w-100" src="img/portfolio/HelloFresh/2.png" loading="lazy" alt="Hello Fresh Modern Design Screenshot">
+								<img class="img-fluid w-100" src="img/portfolio/HelloFresh/2.png" loading="lazy"
+									alt="Hello Fresh Modern Design Screenshot">
 								<div class="overlay"></div>
 								<a href="img/portfolio/HelloFresh/2.1.png" class="img-gal">
 									<div class="icon">
@@ -400,7 +718,8 @@
 								</a>
 							</div>
 							<div class="short_info">
-								<h4><a href="https://hello-fresh-gold.vercel.app/" target="_blank" rel="noopener">Hello Fresh</a></h4>
+								<h4><a href="https://hello-fresh-gold.vercel.app/" target="_blank" rel="noopener">Hello
+										Fresh</a></h4>
 								<p>Modern Design</p>
 								<div class="codeButtonDiv">
 									<button>
@@ -569,7 +888,7 @@
 						<br>
 						<div class="info_item">
 							<i class="lnr lnr-envelope contact-icon"></i>
-							<input type="text" id="myInput" value="Ayupanchal00@gmail.com">
+							<input type="text" id="myInput" value="aayushpanchal18@gmail.com">
 							<button onclick="copyInput()">
 								<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24">
 									<path d="M22 6v16h-16v-16h16zm2-2h-20v20h20v-20zm-24 17v-21h21v2h-19v19h-2z" />
@@ -620,8 +939,7 @@
 					<div class="footer_top flex-column">
 						<div class="footer_logo">
 							<a href="#">
-								<img class="footer-logo" src="logoInvert.png" loading="lazy"
-								alt="Aayush Panchal logo">
+								<img class="footer-logo" src="logoInvert.png" loading="lazy" alt="Aayush Panchal logo">
 							</a>
 							<h4>Follow Me</h4>
 						</div>
@@ -647,21 +965,6 @@
 	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
 	<script src="js/theme.js"></script>
 	<script>
-		/* ── Dark Mode with localStorage persistence ── */
-		const checkbox = document.getElementById('checkbox');
-		if (localStorage.getItem('theme') === 'dark') {
-			document.body.classList.add('dark');
-			checkbox.checked = true;
-		}
-		checkbox.addEventListener('change', () => {
-			document.body.classList.toggle('dark');
-			if (document.body.classList.contains('dark')) {
-				localStorage.setItem('theme', 'dark');
-			} else {
-				localStorage.removeItem('theme');
-			}
-		});
-
 		/* ── Email copy button ── */
 		function copyInput() {
 			const input = document.getElementById('myInput');
@@ -687,25 +990,25 @@
 		}
 
 		/* ── EmailJS Contact Form ── */
-		(function() {
+		(function () {
 			// TODO: Replace with your EmailJS credentials from https://emailjs.com
-			const EMAILJS_SERVICE_ID  = 'YOUR_SERVICE_ID';
+			const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';
 			const EMAILJS_TEMPLATE_ID = 'YOUR_TEMPLATE_ID';
-			const EMAILJS_PUBLIC_KEY  = 'YOUR_PUBLIC_KEY';
+			const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';
 
 			emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY });
 
 			const form = document.getElementById('contactForm');
 			if (!form) return;
 
-			form.addEventListener('submit', function(e) {
+			form.addEventListener('submit', function (e) {
 				e.preventDefault();
 				const submitBtn = form.querySelector('button[type="submit"]');
 				submitBtn.disabled = true;
 				submitBtn.querySelector('span').textContent = 'Sending…';
 
-				const name    = document.getElementById('name').value.trim();
-				const email   = document.getElementById('email').value.trim();
+				const name = document.getElementById('name').value.trim();
+				const email = document.getElementById('email').value.trim();
 				const subject = document.getElementById('subject').value.trim();
 				const message = document.getElementById('message').value.trim();
 
@@ -717,16 +1020,16 @@
 
 				emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
 					from_name: name,
-					reply_to:  email,
-					subject:   subject,
-					message:   message
+					reply_to: email,
+					subject: subject,
+					message: message
 				}).then(() => {
 					showFormMsg('✓ Message sent! I\'ll get back to you soon.', 'success');
 					form.reset();
 					resetBtn(submitBtn);
 				}, (err) => {
 					console.error('EmailJS error:', err);
-					showFormMsg('Something went wrong. Please email me directly at Ayupanchal00@gmail.com', 'error');
+					showFormMsg('Something went wrong. Please email me directly at aayushpanchal18@gmail.com', 'error');
 					resetBtn(submitBtn);
 				});
 			});

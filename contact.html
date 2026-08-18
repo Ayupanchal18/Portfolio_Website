@@ -55,14 +55,6 @@
                             <li class="nav-item"><a class="nav-link" href="index.html#About_Us_Section">ABOUT</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html#portfolio">PROJECTS</a></li>
                             <li class="nav-item active"><a class="nav-link" href="contact.html">CONTACT</a></li>
-                            <div>
-                                <input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-label">
-                                    <i class="fas fa-moon"></i>
-                                    <i class="fas fa-sun"></i>
-                                    <span class="ball"></span>
-                                </label>
-                            </div>
                         </ul>
                     </div>
                 </div>
@@ -87,7 +79,7 @@
                         <br>
                         <div class="info_item">
                             <i class="lnr lnr-envelope contact-icon"></i>
-                            <h6><a href="mailto:Ayupanchal00@gmail.com">Ayupanchal00@gmail.com</a></h6>
+                            <h6><a href="mailto:aayushpanchal18@gmail.com">aayushpanchal18@gmail.com</a></h6>
                         </div>
                     </div>
                 </div>
@@ -173,21 +165,6 @@
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/theme.js"></script>
     <script>
-        /* ── Dark Mode with localStorage persistence ── */
-        const checkbox = document.getElementById('checkbox');
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark');
-            checkbox.checked = true;
-        }
-        checkbox.addEventListener('change', () => {
-            document.body.classList.toggle('dark');
-            if (document.body.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.removeItem('theme');
-            }
-        });
-
         /* ── EmailJS Contact Form ── */
         (function() {
             // TODO: Replace with your EmailJS credentials from https://emailjs.com
@@ -228,7 +205,7 @@
                     resetBtn(submitBtn);
                 }, (err) => {
                     console.error('EmailJS error:', err);
-                    showFormMsg('Something went wrong. Please email Ayupanchal00@gmail.com directly.', 'error');
+                    showFormMsg('Something went wrong. Please email aayushpanchal18@gmail.com directly.', 'error');
                     resetBtn(submitBtn);
                 });
             });

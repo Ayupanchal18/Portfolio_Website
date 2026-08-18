@@ -52,14 +52,6 @@
                             <li class="nav-item active"><a class="nav-link" href="about.html">ABOUT</a></li>
                             <li class="nav-item"><a class="nav-link" href="index.html#portfolio">PROJECTS</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
-                            <div>
-                                <input type="checkbox" class="checkbox" id="checkbox">
-                                <label for="checkbox" class="checkbox-label">
-                                    <i class="fas fa-moon"></i>
-                                    <i class="fas fa-sun"></i>
-                                    <span class="ball"></span>
-                                </label>
-                            </div>
                         </ul>
                     </div>
                 </div>
@@ -96,22 +88,22 @@
 
                 <div class="offset-lg-1 col-lg-5">
                     <div class="main_title text-left">
-                        <h2>Let's <br>
-                            <span class="gradient-color">Introduce</span> About <br>
-                            Myself
+                        <h2>Let me <br>
+                            <span class="gradient-color">introduce</span> <br>
+                            myself
                         </h2>
                         <p>
-                            Hey, I'm Aayush 👨‍💻, a passionate <strong>Full-Stack Developer</strong>
+                            Hey, I'm Aayush 👨‍💻, a passionate <span class="text-highlight">Full-Stack Developer</span>
                             specializing in building scalable MERN stack applications.
                             I enjoy turning complex problems into simple, user-friendly digital experiences.
                             When I'm not coding, you'll find me exploring tech trends, contributing to open
                             source, or planning my next side project.
                         </p>
                         <p>
-                            My <strong>goal</strong> is to contribute my skills to creating innovative and
+                            My <span class="text-highlight">goal</span> is to contribute my skills to creating innovative and
                             user-friendly web applications that make a real difference.
                         </p>
-                        <a class="primary_btn" href="./img/Aayush_CV.pdf" download="Aayush_CV.pdf">
+                        <a class="primary_btn" href="./img/aayush-panchal-resume.pdf" download="aayush-panchal-resume.pdf">
                             <span>Download CV</span>
                         </a>
                     </div>
@@ -210,7 +202,7 @@
                             </div>
                             <div class="ml-15">
                                 <p>Send a mail</p>
-                                <h3>Ayupanchal00@gmail.com</h3>
+                                <h3>aayushpanchal18@gmail.com</h3>
                             </div>
                         </div>
                     </div>
@@ -219,6 +211,73 @@
         </div>
     </section>
     <!--================ End Skills / Technologies Area =================-->
+
+    <!--================ Start Experience & Education Area =================-->
+    <section class="experience_education_area section_gap reveal" id="experience_education">
+        <div class="container">
+            <div class="row">
+                <!-- Experience Column -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="main_title text-left mb-40">
+                        <h2>Work <br>
+                            <span class="gradient-color">Experience</span>
+                        </h2>
+                    </div>
+                    <div class="timeline">
+                        <!-- Job 1 -->
+                        <div class="timeline_item">
+                            <div class="timeline_icon"><i class="fa fa-briefcase"></i></div>
+                            <div class="timeline_content">
+                                <span class="timeline_date">Oct 2025 - Jul 2026</span>
+                                <h4>Jr. MERN Developer</h4>
+                                <h5>Strivedge Technolabs <span class="location"><i class="fa fa-map-marker"></i> Ahmedabad, Gujarat</span></h5>
+                                <ul>
+                                    <li>Developed production SaaS features using React.js, Node.js, Express.js, MySQL, Redux Toolkit, and REST APIs.</li>
+                                    <li>Implemented secure authentication, Stripe-powered subscriptions, and backend APIs with business logic and validations.</li>
+                                    <li>Enhanced job workflows, search, admin dashboards, notifications, analytics, and user-facing features.</li>
+                                    <li>Fixed production issues and contributed to Agile feature releases.</li>
+                                </ul>
+                            </div>
+                         </div>
+                        <!-- Job 2 -->
+                        <div class="timeline_item">
+                            <div class="timeline_icon"><i class="fa fa-briefcase"></i></div>
+                            <div class="timeline_content">
+                                <span class="timeline_date">Sep 2024 - Jul 2025</span>
+                                <h4>Associate</h4>
+                                <h5>Fusion Business Solutions <span class="location"><i class="fa fa-map-marker"></i> Udaipur, Rajasthan</span></h5>
+                                <ul>
+                                    <li>Contributed to data-focused project for Canada-based client, ensuring accurate and timely data processing.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Column -->
+                <div class="col-lg-6">
+                    <div class="main_title text-left mb-40">
+                        <h2>My <br>
+                            <span class="gradient-color">Education</span>
+                        </h2>
+                    </div>
+                    <div class="timeline">
+                        <!-- Edu 1 -->
+                        <div class="timeline_item">
+                            <div class="timeline_icon"><i class="fa fa-graduation-cap"></i></div>
+                            <div class="timeline_content">
+                                <span class="timeline_date">2019 - 2022</span>
+                                <h4>Bachelor of Science</h4>
+                                <h5>University College of Science <span class="location"><i class="fa fa-map-marker"></i> Udaipur, Rajasthan</span></h5>
+                                <p class="edu_details">Graduated with 71% score specializing in Science studies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--================ End Experience & Education Area =================-->
 
     <!--================Footer Area =================-->
     <footer class="footer_area">
@@ -258,22 +317,7 @@
     <script src="vendors/isotope/isotope-min.js"></script>
     <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/theme.js"></script>
-    <script>
-        /* ── Dark Mode with localStorage persistence ── */
-        const checkbox = document.getElementById('checkbox');
-        if (localStorage.getItem('theme') === 'dark') {
-            document.body.classList.add('dark');
-            checkbox.checked = true;
-        }
-        checkbox.addEventListener('change', () => {
-            document.body.classList.toggle('dark');
-            if (document.body.classList.contains('dark')) {
-                localStorage.setItem('theme', 'dark');
-            } else {
-                localStorage.removeItem('theme');
-            }
-        });
-    </script>
+
 </body>
 
 </html>

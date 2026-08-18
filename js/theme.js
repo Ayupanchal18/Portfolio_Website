@@ -1,4 +1,4 @@
-(function($) {
+(function ($) {
 	'use strict';
 
 	var nav_offset_top = $('header').height() + 50;
@@ -9,7 +9,7 @@
 	//* Navbar Fixed
 	function navbarFixed() {
 		if ($('.header_area').length) {
-			$(window).scroll(function() {
+			$(window).scroll(function () {
 				var scroll = $(window).scrollTop();
 				if (scroll >= nav_offset_top) {
 					$('.header_area').addClass('navbar_fixed');
@@ -23,18 +23,22 @@
 
 	/*----------------------------------------------------*/
 	/*  MailChimp Slider
-    /*----------------------------------------------------*/
+	/*----------------------------------------------------*/
 	function mailChimp() {
-		$('#mc_embed_signup').find('form').ajaxChimp();
+		if ($('#mc_embed_signup').length && $.fn.ajaxChimp) {
+			$('#mc_embed_signup').find('form').ajaxChimp();
+		}
 	}
 	mailChimp();
 
-	$('select').niceSelect();
+	if ($.fn.niceSelect) {
+		$('select').niceSelect();
+	}
 	/* ---------------------------------------------
-            Isotope js Starts
-         --------------------------------------------- */
-	$(window).on('load', function() {
-		$('.portfolio-filter ul li').on('click', function() {
+			Isotope js Starts
+		 --------------------------------------------- */
+	$(window).on('load', function () {
+		$('.portfolio-filter ul li').on('click', function () {
 			$('.portfolio-filter ul li').removeClass('active');
 			$(this).addClass('active');
 
@@ -55,14 +59,21 @@
 		}
 	});
 
-	/*----------------------------------------------------*/
-	/* Start Magnific Pop Up
-	/*----------------------------------------------------*/
-	if ($('.img-gal').length > 0) {
-		$('.img-gal').magnificPopup({
-			type: 'image',
-			gallery: {
-				enabled: true
+	if ($('.single_portfolio').length > 0) {
+		$('.single_portfolio').each(function () {
+			$(this).magnificPopup({
+				delegate: '.img-gal',
+				type: 'image',
+				gallery: {
+					enabled: true
+				}
+			});
+		});
+
+		// Trigger gallery popup when clicking anywhere on the card container (excluding direct overlay links)
+		$('.single_portfolio').on('click', function (e) {
+			if (!$(e.target).closest('a').length) {
+				$(this).find('.img-gal').first().click();
 			}
 		});
 	}
@@ -72,7 +83,7 @@
 
 	/*----------------------------------------------------*/
 	/*  Testimonials Slider
-    /*----------------------------------------------------*/
+	/*----------------------------------------------------*/
 	function testimonials_slider() {
 		if ($('.testi_slider').length) {
 			$('.testi_slider').owlCarousel({
@@ -98,7 +109,7 @@
 
 	/*----------------------------------------------------*/
 	/*  Google map js
-    /*----------------------------------------------------*/
+	/*----------------------------------------------------*/
 
 	if ($('#mapBox').length) {
 		var $lat = $('#mapBox').data('lat');
@@ -306,4 +317,19 @@
 			]
 		});
 	}
+	/*----------------------------------------------------*/
+	/*  Certificate Modal Toggle
+	/*----------------------------------------------------*/
+	$('.cert-card .overlay a').on('click', function (e) {
+		e.preventDefault();
+		var targetModal = $(this).attr('href');
+		$(targetModal).fadeIn(300).css('display', 'flex');
+	});
+
+	$('.modal').on('click', function (e) {
+		if ($(e.target).hasClass('modal') || $(e.target).closest('.close-btn').length) {
+			e.preventDefault();
+			$(this).fadeOut(300);
+		}
+	});
 })(jQuery);
